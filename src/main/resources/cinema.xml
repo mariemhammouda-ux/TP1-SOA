@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cinema>
+    <films>
+        <film id="F1" genre="science-fiction" enSalle="true">
+            <titre>Inception</titre>
+            <realisateur>Christopher Nolan</realisateur>
+            <annee>2010</annee>
+            <duree>148</duree>
+            <note>8.8</note>
+        </film>
+        <film id="F2" genre="drame" enSalle="false">
+            <titre>Le Parrain</titre>
+            <realisateur>Francis Ford Coppola</realisateur>
+            <annee>1972</annee>
+            <duree>175</duree>
+            <note>9.2</note>
+        </film>
+        <film id="F3" genre="animation" enSalle="true">
+            <titre>Coco</titre>
+            <realisateur>Lee Unkrich</realisateur>
+            <annee>2017</annee>
+            <duree>105</duree>
+            <note>8.4</note>
+        </film>
+        <film id="F4" genre="science-fiction" enSalle="true">
+            <titre>Interstellar</titre>
+            <realisateur>Christopher Nolan</realisateur>
+            <annee>2014</annee>
+            <duree>169</duree>
+            <note>8.7</note>
+        </film>
+    </films>
+
+    <utilisateurs>
+        <utilisateur id="U1" actif="true">
+            <nom>Ahmed Ben Salah</nom>
+            <email>ahmed.bensalah@example.com</email>
+        </utilisateur>
+        <utilisateur id="U2" actif="false">
+            <nom>Sarra Trabelsi</nom>
+            <email>sarra.trabelsi@example.com</email>
+        </utilisateur>
+        <utilisateur id="U3" actif="true">
+            <nom>Mohamed Gharbi</nom>
+            <email>mohamed.gharbi@example.com</email>
+        </utilisateur>
+    </utilisateurs>
+
+    <reservations>
+        <reservation id="R1" utilisateurRef="U1" filmRef="F1">
+            <date>2026-01-15</date>
+            <nbPlaces>2</nbPlaces>
+            <prix>24.0</prix>
+        </reservation>
+        <reservation id="R2" utilisateurRef="U3" filmRef="F3">
+            <date>2026-01-16</date>
+            <nbPlaces>4</nbPlaces>
+            <prix>36.0</prix>
+        </reservation>
+        <reservation id="R3" utilisateurRef="U1" filmRef="F4">
+            <date>2026-01-20</date>
+            <nbPlaces>1</nbPlaces>
+            <prix>12.0</prix>
+        </reservation>
+    </reservations>
+</cinema>
